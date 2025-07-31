@@ -1,0 +1,58 @@
+.container{
+    width: 680px;
+    height:300px;
+    border:1px solid black;
+    margin:auto;
+    position: relative;
+}
+.Dino{
+    width:50px;
+    height:50px;
+    background-image: url(image/Dino.png);
+    background-size:50px 50px;
+    position:relative;
+    top:250px;
+    left: 10px;
+}
+.jump{
+    animation:jump  0.5s linear; 
+}
+
+.cactus{
+    width:30px;
+    height:50px;
+    background-image: url('image/cactus.png');
+    background-size: 30px 50px;
+    position:relative;
+    top:200px;
+    left: 630px;
+    animation: movecactus 1.5s linear infinite;
+}
+@keyframes movecactus{
+    0%{
+        left:630;
+    }
+    25%{
+        left:473px;
+    }
+    50%{
+        left:315px;
+    }
+    75%{
+        left:157px;
+    }
+    100%{
+        left:0px;
+    }
+}
+@keyframes jump{
+    0%{
+        top:250px;
+    }
+    25%{
+        top:200px;
+    }
+    50%{
+        top:150px;
+    }
+}
